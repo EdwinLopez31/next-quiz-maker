@@ -10,12 +10,8 @@ export default function Home() {
         <PageHeader title={page.title}></PageHeader>
       </div>
       <div className="flex flex-col items-center gap-4 self-end p-20">
-        <span className="w-72">
-          <CustomButton text={page.primaryButtonText} />
-        </span>
-        <span className="w-72">
-          <CustomButton variant="secondary" text={page.secondaryButtonText} />
-        </span>
+        <CustomButton className="w-60" text={page.primaryButtonText} />
+        <CustomButton className="w-60" text={page.secondaryButtonText} />
       </div>
     </main>
   );
