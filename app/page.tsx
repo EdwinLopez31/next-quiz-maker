@@ -5,10 +5,18 @@ import PageHeader from '@/components/ui/header/PageHeader';
 
 export default function Home() {
   return (
-    <main className="grid place-content-center min-h-screen text-white">
-      <PageHeader title={page.title}></PageHeader>
-      <CustomButton text={page.primaryButtonText} />
-      <CustomButton text={page.secondaryButtonText} />
+    <main className="grid min-h-screen text-white grid-rows-2">
+      <div className="self-end flex justify-center">
+        <PageHeader title={page.title}></PageHeader>
+      </div>
+      <div className="flex flex-col items-center gap-4 self-end p-20">
+        <span className="w-72">
+          <CustomButton text={page.primaryButtonText} />
+        </span>
+        <span className="w-72">
+          <CustomButton variant="secondary" text={page.secondaryButtonText} />
+        </span>
+      </div>
     </main>
   );
 }
