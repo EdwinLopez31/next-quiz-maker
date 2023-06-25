@@ -18,7 +18,10 @@ const CreateQuiz = () => {
   } = useFormStages(1);
   return (
     <main className="grid relative items-center min-h-screen p-6">
-      <form className="lg:w-2/4 sm:w-1/2 w-full justify-self-center min-h-[16rem] rounded form-control">
+      <form
+        role="form"
+        className="lg:w-2/4 sm:w-1/2 w-full justify-self-center min-h-[16rem] rounded form-control"
+      >
         {currentStage > 1 && (
           <button
             type="button"
